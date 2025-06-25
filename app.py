@@ -67,10 +67,10 @@ class ImageData(db.Model):
     __tablename__ = 'singora_images'
     
     id = db.Column(db.Integer, primary_key=True)
-    image = db.Column(db.LargeBinary, nullable=False)  # Store image as binary data
+    image = db.Column(db.LargeBinary(length=16777215), nullable=False)  # MEDIUMBLOB in MySQL
     label_name = db.Column(db.String(255), nullable=False, index=True)
-    date = db.Column(db.Date, default=datetime.utcnow().date, nullable=False)  # Auto date
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)  # Auto timestamp
+    date = db.Column(db.Date, default=datetime.utcnow().date, nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
     
     def to_dict(self, include_image=False):
         result = {

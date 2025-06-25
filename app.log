@@ -262,3 +262,116 @@ AttributeError: 'DataError' object has no attribute 'response'
 2025-06-25 10:53:26,780 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 10:53:26] "GET /api/v1/images/download/label/Naps HTTP/1.1" 200 -
 2025-06-25 10:59:59,476 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 10:59:59] "GET /api/v1/images/download/all HTTP/1.1" 200 -
 2025-06-25 11:02:36,714 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 11:02:36] "GET /api/v1/images/download/info HTTP/1.1" 200 -
+2025-06-25 12:04:52,138 ERROR __main__ Failed to create database tables: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-25 12:04:52,158 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.39.80:5000
+2025-06-25 12:04:52,159 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-06-25 12:17:41,787 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:17:41] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-25 12:17:42,626 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:17:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 12:18:24,151 ERROR __main__ Health check failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-25 12:18:24,152 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:18:24] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+2025-06-25 12:19:28,002 ERROR __main__ Health check failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-25 12:19:28,004 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:19:28] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+2025-06-25 12:19:50,721 ERROR __main__ Failed to create database tables: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-25 12:19:50,738 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.39.80:5000
+2025-06-25 12:19:50,738 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-06-25 12:26:00,751 ERROR __main__ Failed to create database tables: (pymysql.err.OperationalError) (1049, "Unknown database 'singora_db'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-25 12:26:00,764 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.39.80:5000
+2025-06-25 12:26:00,764 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-06-25 12:27:01,613 INFO __main__ Database tables created successfully
+2025-06-25 12:27:01,630 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.39.80:5000
+2025-06-25 12:27:01,630 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-06-25 12:29:38,935 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:29:38] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-25 12:29:48,750 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:29:48] "GET /health HTTP/1.1" 200 -
+2025-06-25 12:31:22,942 ERROR __main__ Database error: (pymysql.err.DataError) (1406, "Data too long for column 'image' at row 1")
+[SQL: INSERT INTO singora_images (image, label_name, date, timestamp) VALUES (%(image)s, %(label_name)s, %(date)s, %(timestamp)s)]
+[parameters: {'image': b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00`\x00`\x00\x00\xff\xe10\xcaExif\x00\x00MM\x00*\x00\x00\x00\x08\x00\x04\x011\x00\x02\x00\x00\x00\x0b\ ... (330930 characters truncated) ... 7\x1f\xc2EF\xf0\x95\xe4\x8f\xccV\xfb[\x9488\xfa\xd3\r\xa89\xe3\xad1\x1c\xfb\xc6\t\xe9\x83\xf4\xa6\x14\x07\xb0&\xb7\xda\xd9Oa\xc5@\xd6H{u\xa63\xff\xd9', 'label_name': 'Naps, slubs,Naps', 'date': datetime.date(2025, 6, 25), 'timestamp': datetime.datetime(2025, 6, 25, 7, 1, 22, 924009)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-25 12:31:22,943 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:31:22] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 500 -
+2025-06-25 12:39:09,251 INFO __main__ Database tables created successfully
+2025-06-25 12:39:09,264 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.160:5000
+2025-06-25 12:39:09,264 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-06-25 12:40:21,813 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:40:21] "GET /health HTTP/1.1" 200 -
+2025-06-25 12:40:22,760 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:40:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 12:41:52,380 ERROR __main__ Database error: (pymysql.err.OperationalError) (1054, "Unknown column 'file_size' in 'field list'")
+[SQL: INSERT INTO singora_images (image, label_name, file_size, mime_type, date, timestamp) VALUES (%(image)s, %(label_name)s, %(file_size)s, %(mime_type)s, %(date)s, %(timestamp)s)]
+[parameters: {'image': b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00`\x00`\x00\x00\xff\xe10\xcaExif\x00\x00MM\x00*\x00\x00\x00\x08\x00\x04\x011\x00\x02\x00\x00\x00\x0b\ ... (330930 characters truncated) ... 7\x1f\xc2EF\xf0\x95\xe4\x8f\xccV\xfb[\x9488\xfa\xd3\r\xa89\xe3\xad1\x1c\xfb\xc6\t\xe9\x83\xf4\xa6\x14\x07\xb0&\xb7\xda\xd9Oa\xc5@\xd6H{u\xa63\xff\xd9', 'label_name': 'Naps, slubs,Naps', 'file_size': None, 'mime_type': None, 'date': datetime.date(2025, 6, 25), 'timestamp': datetime.datetime(2025, 6, 25, 7, 11, 52, 364999)}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-25 12:41:52,384 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 12:41:52] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 500 -
+2025-06-25 14:16:33,854 INFO __main__ Database tables created successfully
+2025-06-25 14:16:33,877 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.160:5000
+2025-06-25 14:16:33,877 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-06-25 14:18:47,307 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:18:47] "GET /health HTTP/1.1" 200 -
+2025-06-25 14:18:48,494 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:18:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 14:20:26,924 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:20:26] "GET /health HTTP/1.1" 200 -
+2025-06-25 14:21:02,024 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:21:02] "[31m[1mGET /api/v1/images/download/info HTTP/1.1[0m" 401 -
+2025-06-25 14:21:49,553 ERROR __main__ Database error: (pymysql.err.DataError) (1406, "Data too long for column 'image' at row 1")
+[SQL: INSERT INTO singora_images (image, label_name, date, timestamp) VALUES (%(image)s, %(label_name)s, %(date)s, %(timestamp)s)]
+[parameters: {'image': b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff\xe2\x02(ICC_PROFILE\x00\x01\x01\x00\x00\x02\x18\x00\x00\x00\x00\x02\x10\x00\x00mn ... (257386 characters truncated) ... \xb0;\x0b\xc9\xd7\x83>\x83\xa4\xed\xd5\x1a\x04\x80\xaa\x05L\x16\xe0\xe9uL 8@\x89\xab$\x03\xa0\x02\n\x15;\x8d\xa0\tjCD\\\xb0\xc0\xe9\xb09$\x7f\xff\xd9', 'label_name': 'Naps, slubs,Naps', 'date': datetime.date(2025, 6, 25), 'timestamp': datetime.datetime(2025, 6, 25, 8, 51, 49, 539382)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-25 14:21:49,555 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:21:49] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 500 -
+2025-06-25 14:22:11,265 ERROR __main__ Database error: (pymysql.err.DataError) (1406, "Data too long for column 'image' at row 1")
+[SQL: INSERT INTO singora_images (image, label_name, date, timestamp) VALUES (%(image)s, %(label_name)s, %(date)s, %(timestamp)s)]
+[parameters: {'image': b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00`\x00`\x00\x00\xff\xdb\x00C\x00\x04\x03\x03\x04\x03\x03\x04\x04\x03\x04\x05\x04\x04\x05\x06\n\x07\x0 ... (291091 characters truncated) ... 1f\xf4\xf83\xf53\x9b;\xf6\xd8\xff\x00\xb7\xc3?Y\xc3\xf5\x7f\xbc\xfd\x16?\xf3y\xcf\xf8}\x7f\x01\xff\x00_\xa6p\x7f\xc6\x99\xcd\xf8\xc7\x97\xe7?\xff\xd9', 'label_name': 'Naps, slubs,Naps', 'date': datetime.date(2025, 6, 25), 'timestamp': datetime.datetime(2025, 6, 25, 8, 52, 11, 247137)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-25 14:22:11,268 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:22:11] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 500 -
+2025-06-25 14:22:27,227 ERROR __main__ Database error: (pymysql.err.DataError) (1406, "Data too long for column 'image' at row 1")
+[SQL: INSERT INTO singora_images (image, label_name, date, timestamp) VALUES (%(image)s, %(label_name)s, %(date)s, %(timestamp)s)]
+[parameters: {'image': b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff\xe2\x02(ICC_PROFILE\x00\x01\x01\x00\x00\x02\x18\x00\x00\x00\x00\x02\x10\x00\x00mn ... (257386 characters truncated) ... \xb0;\x0b\xc9\xd7\x83>\x83\xa4\xed\xd5\x1a\x04\x80\xaa\x05L\x16\xe0\xe9uL 8@\x89\xab$\x03\xa0\x02\n\x15;\x8d\xa0\tjCD\\\xb0\xc0\xe9\xb09$\x7f\xff\xd9', 'label_name': 'Naps, slubs,Naps', 'date': datetime.date(2025, 6, 25), 'timestamp': datetime.datetime(2025, 6, 25, 8, 52, 27, 217036)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-25 14:22:27,229 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:22:27] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 500 -
+2025-06-25 14:24:53,624 INFO __main__ Database tables created successfully
+2025-06-25 14:24:53,635 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.39.80:5000
+2025-06-25 14:24:53,636 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-06-25 14:33:37,173 INFO __main__ Database tables created successfully
+2025-06-25 14:33:37,184 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.39.80:5000
+2025-06-25 14:33:37,184 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-06-25 14:36:47,410 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:36:47] "GET /health HTTP/1.1" 200 -
+2025-06-25 14:36:48,363 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:36:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 14:37:18,633 INFO __main__ Image uploaded successfully with ID: 1
+2025-06-25 14:37:18,634 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:37:18] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 201 -
+2025-06-25 14:37:43,275 INFO __main__ Image uploaded successfully with ID: 2
+2025-06-25 14:37:43,277 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:37:43] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 201 -
+2025-06-25 14:38:16,143 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:38:16] "[31m[1mGET /api/v1/images HTTP/1.1[0m" 405 -
+2025-06-25 14:47:45,604 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:47:45] "GET /health HTTP/1.1" 200 -
+2025-06-25 14:47:46,400 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:47:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 14:47:58,563 INFO __main__ Image uploaded successfully with ID: 3
+2025-06-25 14:47:58,564 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:47:58] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 201 -
+2025-06-25 14:48:38,669 INFO __main__ Image uploaded successfully with ID: 4
+2025-06-25 14:48:38,671 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:48:38] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 201 -
+2025-06-25 14:48:47,205 INFO __main__ Image uploaded successfully with ID: 5
+2025-06-25 14:48:47,206 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:48:47] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 201 -
+2025-06-25 14:49:02,441 INFO __main__ Image uploaded successfully with ID: 6
+2025-06-25 14:49:02,447 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:49:02] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 201 -
+2025-06-25 14:49:20,753 INFO __main__ Image uploaded successfully with ID: 7
+2025-06-25 14:49:20,754 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:49:20] "[35m[1mPOST /api/v1/images HTTP/1.1[0m" 201 -
+2025-06-25 14:54:48,473 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:54:48] "GET /api/v1/images/download/all HTTP/1.1" 200 -
+2025-06-25 14:55:06,808 INFO werkzeug 127.0.0.1 - - [25/Jun/2025 14:55:06] "GET /api/v1/images/download/all HTTP/1.1" 200 -
